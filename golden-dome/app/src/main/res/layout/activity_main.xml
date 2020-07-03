@@ -8,17 +8,38 @@
     android:background="@drawable/background"
     >
     <Button
+        android:id="@+id/background_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="300dp"
+        android:width="375dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonbackgroundcolour"
+        android:text=""
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"/>
+
+    <Button
         android:id="@+id/openSalahClock"
-        android:height="60dp"
-        android:width="350dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25sp"
-        android:text="Open Salah Clock"
+        android:layout_marginTop="30sp"
+        android:width="350dp"
+        android:height="60dp"
+        android:background="@drawable/salahclockbuttonbackground"
+        android:fontFamily="@font/source_sans_pro"
+        android:src="@drawable/clock_asset"
+        android:text="Open Salah Clock "
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="25sp"
-        android:background="@drawable/salahclockbuttonbackground"/>
+        android:textSize="25sp" />
 
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:translationX="50dp"
+        app:srcCompat="@drawable/clock_asset" />
 </RelativeLayout>
