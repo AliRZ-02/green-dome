@@ -1,45 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/background"
-    >
+    tools:context=".MainActivity">
+
     <Button
         android:id="@+id/background_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:height="300dp"
+        android:layout_marginTop="15dp"
         android:width="375dp"
-        android:layout_centerHorizontal="true"
+        android:height="300dp"
         android:background="@drawable/buttonbackgroundcolour"
         android:text=""
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/openSalahClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="30sp"
         android:width="350dp"
         android:height="60dp"
         android:background="@drawable/salahclockbuttonbackground"
         android:fontFamily="@font/source_sans_pro"
-        android:src="@drawable/clock_asset"
         android:text="Open Salah Clock "
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/clock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
-        android:translationX="50dp"
+        android:contextClickable="false"
+        android:translationX="40dp"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/clock_asset" />
-</RelativeLayout>
+
+    <Button
+        android:id="@+id/coming_soon_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105sp"
+        android:width="350dp"
+        android:height="60dp"
+        android:background="@drawable/salahclockbuttonbackground"
+        android:contextClickable="false"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Coming Soon!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:contextClickable="false"
+        android:translationX="40dp"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/code_asset" />
+
+    <Button
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180sp"
+        android:width="350dp"
+        android:height="120dp"
+        android:background="@drawable/salahclockbuttonbackground"
+        android:fontFamily="@font/source_sans_pro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:contextClickable="false"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Quote of the Day"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:translationX="20sp"
+        android:translationY="180sp"
+        android:translationZ="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:contextClickable="false"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Be generous, but not extravagant, be frugal but not miserly - Imam Ali (as)"
+        android:textAlignment="center"
+        android:textColor="@color/windowBackground"
+        android:textSize="24sp"
+        android:translationX="25sp"
+        android:translationY="210sp"
+        android:translationZ="3sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
