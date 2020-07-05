@@ -8,25 +8,15 @@
     android:background="@drawable/salahbackground">
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="486dp"
-        android:layout_height="89dp"
-        android:background="#FF7675"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/source_sans_pro"
         android:text="Salah Clock"
-        android:textColor="#000000"
+        android:textColor="#2d3436"
         android:textSize="55sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

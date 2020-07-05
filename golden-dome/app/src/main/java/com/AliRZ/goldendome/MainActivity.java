@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,26 +18,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageButton simpleImageButton = (ImageButton)findViewById(R.id.openSalahClock);
+        ImageButton salahClockImageButton = (ImageButton) findViewById(R.id.openSalahClock);
+        ImageButton comingSoonImageButton = findViewById(R.id.comingSoon);
 
-        simpleImageButton.setOnClickListener(new View.OnClickListener() {
+        salahClockImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openSalahClockActivity();
             }
         });
-        /*
-        openSalahClock = findViewById(R.id.openSalahClock);
-        openSalahClock.setOnClickListener(new View.OnClickListener() {
+
+        comingSoonImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openSalahClockActivity();
+                openComingSoonPage();
             }
         });
-         */
+
     }
-    public void openSalahClockActivity (){
-        Intent intent = new Intent (this, SalahClockActivity.class);
+
+    public void openSalahClockActivity() {
+        Intent intent = new Intent(this, SalahClockActivity.class);
         startActivity(intent);
+    }
+
+    public void openComingSoonPage (){
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Coming Soon!", Toast.LENGTH_SHORT);
+        toast.show();
+
     }
 }
