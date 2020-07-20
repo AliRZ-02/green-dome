@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Golden Dome</string>
+    <string name="fajr_time">Fajr</string>
+    <string name="sunrise_time">Sunrise</string>
+    <string name="zuhr_time">Zuhr</string>
+    <string name="sunset_time">Sunset</string>
+    <string name="maghrib_time">Maghrib</string>
+    <string name="fajr_calculated">Loading...</string>
+    <string name="sunrise_calculated">Loading...</string>
+    <string name="zuhr_calculated">Loading...</string>
+    <string name="sunset_calculated">Loading...</string>
+    <string name="mahgrib_calculated">Loading...</string>
 </resources>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/salahbackground">
+    android:background="@drawable/salahbackground"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -20,5 +20,241 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/manual_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/transparent"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/back_image_button"
+        app:srcCompat="@drawable/manual_button_asset" />
+
+    <ImageButton
+        android:id="@+id/back_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/transparent"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toTopOf="@+id/manual_image_button"
+        app:layout_constraintStart_toStartOf="@+id/adhan_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/adhan_image_button"
+        app:srcCompat="@drawable/back_asset" />
+
+    <ImageButton
+        android:id="@+id/adhan_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/transparent"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toTopOf="@+id/back_image_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maghrib_time_text"
+        app:srcCompat="@drawable/pause_asset"
+        android:onClick="pauseAdhan"/>
+
+    <Button
+        android:id="@+id/manual_button"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/salah_clock_textview"
+        android:fontFamily="@font/roboto"
+        android:text="Manual Settings"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/manual_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/back_button" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/salah_clock_textview"
+        android:fontFamily="@font/roboto"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/manual_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/back_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/adhan_button" />
+
+    <Button
+        android:id="@+id/adhan_button"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/salah_clock_textview"
+        android:fontFamily="@font/roboto"
+        android:text="Play Adhan"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/adhan_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/maghrib_time_text"
+        android:onClick="playAdhan"/>
+
+    <TextView
+        android:id="@+id/fajr_time_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/fajr_time"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sunrise_time_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/sunrise_time_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/sunrise_time"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/zuhr_time_text"
+        app:layout_constraintStart_toStartOf="@+id/fajr_time_text"
+        app:layout_constraintTop_toBottomOf="@+id/fajr_time_text" />
+
+    <TextView
+        android:id="@+id/zuhr_time_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/zuhr_time"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sunset_time_text"
+        app:layout_constraintStart_toStartOf="@+id/sunrise_time_text"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_time_text" />
+
+    <TextView
+        android:id="@+id/sunset_time_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/sunset_time"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/maghrib_time_text"
+        app:layout_constraintStart_toStartOf="@+id/zuhr_time_text"
+        app:layout_constraintTop_toBottomOf="@+id/zuhr_time_text" />
+
+    <TextView
+        android:id="@+id/maghrib_time_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/maghrib_time"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adhan_button"
+        app:layout_constraintStart_toStartOf="@+id/sunset_time_text"
+        app:layout_constraintTop_toBottomOf="@+id/sunset_time_text"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/fajr_time_response"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/fajr_calculated"
+        android:textAlignment="center"
+        android:textColor="#e17055"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/sunrise_time_response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/sunrise_time_response"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/sunrise_calculated"
+        android:textAlignment="center"
+        android:textColor="#e17055"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/zuhr_time_response"
+        app:layout_constraintEnd_toEndOf="@+id/fajr_time_response"
+        app:layout_constraintTop_toBottomOf="@+id/fajr_time_response" />
+
+    <TextView
+        android:id="@+id/zuhr_time_response"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/zuhr_calculated"
+        android:textAlignment="center"
+        android:textColor="#e17055"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/sunset_time_response"
+        app:layout_constraintEnd_toEndOf="@+id/sunrise_time_response"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_time_response" />
+
+    <TextView
+        android:id="@+id/sunset_time_response"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/sunset_calculated"
+        android:textAlignment="center"
+        android:textColor="#e17055"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/maghrib_time_response"
+        app:layout_constraintEnd_toEndOf="@+id/zuhr_time_response"
+        app:layout_constraintTop_toBottomOf="@+id/zuhr_time_response" />
+
+    <TextView
+        android:id="@+id/maghrib_time_response"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/mahgrib_calculated"
+        android:textAlignment="center"
+        android:textColor="#e17055"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/adhan_button"
+        app:layout_constraintEnd_toEndOf="@+id/sunset_time_response"
+        app:layout_constraintTop_toBottomOf="@+id/sunset_time_response"
+        app:layout_constraintVertical_weight="1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
