@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Green Dome</string>
+    <string name="fajr_time">Fajr</string>
+    <string name="sunrise_time">Sunrise</string>
+    <string name="zuhr_time">Zuhr</string>
+    <string name="sunset_time">Sunset</string>
+    <string name="maghrib_time">Maghrib</string>
+    <string name="fajr_calculated"></string>
+    <string name="sunrise_calculated"></string>
+    <string name="zuhr_calculated"></string>
+    <string name="sunset_calculated"></string>
+    <string name="mahgrib_calculated"></string>
+    <string name="user_feedback_string">Not getting a response? Try checking the location name for errors</string>
+ </resources>

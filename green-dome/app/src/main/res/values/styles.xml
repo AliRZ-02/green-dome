@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground"> @color/windowBackground</item>
+    </style>
+
+    <style name="DatePickerStyle" parent="android:Widget.Material.DatePicker">
+        <item name="android:textColorPrimary">@color/date_pick_colour</item>
+        <item name="colorPrimary">@color/date_pick_colour</item>
+        <item name="colorPrimaryDark">@color/date_pick_colour</item>
+        <item name="colorAccent">@color/date_pick_colour</item>
+    </style>
+
+</resources>
