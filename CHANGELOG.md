@@ -1,3 +1,6 @@
+# 07/26/2020
+- Created an icon for the app itself
+
 # 07/25/2020
 - Since last update, added the manual salah clock option with all functionality such as Adhan, back buttons, location API, timezone API, Date Picker and more
 - Made a scrollable UI for the manual selection
