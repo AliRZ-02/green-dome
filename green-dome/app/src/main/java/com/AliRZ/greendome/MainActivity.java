@@ -12,19 +12,25 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button openSalahClock;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageButton salahClockImageButton = (ImageButton) findViewById(R.id.openSalahClock);
-        ImageButton comingSoonImageButton = findViewById(R.id.manual_image_button);
+        ImageButton tasbeehCounterImageButton = findViewById(R.id.counter_button);
+        ImageButton comingSoonImageButton = findViewById(R.id.comingSoonButton);
 
         salahClockImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openSalahClockActivity();
+            }
+        });
+
+        tasbeehCounterImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTasbeehCounter();
             }
         });
 
@@ -35,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void openTasbeehCounter() {
+        Intent intent = new Intent(this, TasbeehCounter.class);
+        startActivity(intent);
     }
 
     public void openSalahClockActivity() {

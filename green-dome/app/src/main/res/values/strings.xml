@@ -11,4 +11,7 @@
     <string name="sunset_calculated"></string>
     <string name="mahgrib_calculated"></string>
     <string name="user_feedback_string">Not getting a response? Try checking the location name for errors</string>
- </resources>
+    <string name="counter_label">Current</string>
+    <string name="counter_response">0</string>
+    <string name="comingSoon">Coming Soon!</string>
+</resources>

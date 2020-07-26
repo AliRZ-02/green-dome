@@ -12,7 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ManualSalahClockActivity"></activity>
+        <activity android:name=".TasbeehCounter">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.OPENABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ManualSalahClockActivity" />
         <activity android:name=".SalahClockActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

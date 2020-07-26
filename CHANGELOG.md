@@ -1,4 +1,8 @@
 # 07/26/2020
+- Updated App icon for visual appeal
+- Added Tasbeeh Counter Activity
+
+# 07/26/2020 (1)
 - Created an icon for the app itself
 
 # 07/25/2020
