@@ -48,7 +48,7 @@ public class ManualSalahClockActivity extends AppCompatActivity   {
     DetermineSalahTime determineSalahTime = new DetermineSalahTime();
     Calendar userCalendar = Calendar.getInstance();
     String adhanStarted = "null";
-    String APIkey;
+    String APIkey; // Add API Key for TimeZoneDB here
     String dstTrue = "without daylight savings time";
 
     @Override

@@ -14,4 +14,6 @@
     <string name="counter_label">Current</string>
     <string name="counter_response">0</string>
     <string name="comingSoon">Coming Soon!</string>
+    <string name="instructions_title">Instructions</string>
+    <string name="instructions_page_1">Text</string>
 </resources>

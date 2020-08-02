@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton salahClockImageButton = (ImageButton) findViewById(R.id.openSalahClock);
         ImageButton tasbeehCounterImageButton = findViewById(R.id.counter_button);
         ImageButton comingSoonImageButton = findViewById(R.id.comingSoonButton);
+        ImageButton qiblaFinderImageButton = findViewById(R.id.qibla_button);
 
         salahClockImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        qiblaFinderImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openQiblaFinder();
+            }
+        });
     }
 
     private void openTasbeehCounter() {
@@ -56,5 +63,10 @@ public class MainActivity extends AppCompatActivity {
     public void openComingSoonPage (){
         Toast toast = Toast.makeText(this, "Coming Soon!", Toast.LENGTH_SHORT);
         toast.show();
+    }
+
+    public void openQiblaFinder(){
+        Intent intent = new Intent(this, QiblaFinder.class);
+        startActivity(intent);
     }
 }

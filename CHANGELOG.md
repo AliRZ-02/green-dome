@@ -1,3 +1,6 @@
+# 08/02/2020
+- Added Qibla Finder activity as well as corresponding instructions
+
 # 07/26/2020
 - Updated App icon for visual appeal
 - Added Tasbeeh Counter Activity
