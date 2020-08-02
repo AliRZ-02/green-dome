@@ -48,6 +48,7 @@
 - I became more familiar with object-oriented programming
 - I learned how to use UI elements such as the Date Picker Tool
 - I learned how to create scrollable UI
+- I learned how to use the accelerometer and magnetometer inside an adnroid device to create a compass
 
 ### Development
 - The development of this software is ongoing

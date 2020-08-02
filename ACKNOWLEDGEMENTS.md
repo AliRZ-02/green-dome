@@ -25,7 +25,7 @@
 - Thanks to [Programmer World](https://www.youtube.com/watch?v=Dqg1A4hy-jI) for their video on creating an Android Compass App
 - Thanks to [S. Kamal Abdali](https://geomete.com/abdali/papers/qibla.pdf) for their paper on determining the Qibla using the coordinates and spherical trignometry
 - Thanks to [Jean Hominal](https://stackoverflow.com/questions/6785965/how-to-get-the-number-of-seconds-passed-since-1970-for-a-date-value) for their answer in this thread regarding the calculation of Epoch Time
-- Thanks to [Amiel](https://stackoverflow.com/questions/44519537/instructions-activity-android-studio for their answer in this Stack Overflow Thread regarding instructions pages in Android
+- Thanks to [Amiel](https://stackoverflow.com/questions/44519537/instructions-activity-android-studio) for their answer in this Stack Overflow Thread regarding instructions pages in Android
 
 ## External APIS
 - [TimeZoneDB](https://timezonedb.com/) & [Nominatim](https://nominatim.org/release-docs/develop/api/Search/)
