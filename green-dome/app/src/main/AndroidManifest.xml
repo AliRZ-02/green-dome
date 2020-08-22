@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QiblaInstructionsActivity"></activity>
+        <activity android:name=".linksPage"></activity>
+        <activity android:name=".QiblaInstructionsActivity" />
         <activity android:name=".QiblaFinder" />
         <activity android:name=".TasbeehCounter">
             <intent-filter>

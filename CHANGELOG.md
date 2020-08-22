@@ -1,3 +1,6 @@
+# 08/22/2020
+- Added Resources & Links to the Resources Activity
+
 # 08/02/2020
 - Added Qibla Finder activity as well as corresponding instructions
 

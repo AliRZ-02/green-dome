@@ -13,7 +13,10 @@
     <string name="user_feedback_string">Not getting a response? Try checking the location name for errors</string>
     <string name="counter_label">Current</string>
     <string name="counter_response">0</string>
-    <string name="comingSoon">Coming Soon!</string>
+    <string name="about_text">About</string>
     <string name="instructions_title">Instructions</string>
     <string name="instructions_page_1">Text</string>
+    <string name="title_activity_reminders">RemindersActivity</string>
+    <string name="tab_text_1">Reminders</string>
+    <string name="tab_text_2">To-Do List</string>
 </resources>

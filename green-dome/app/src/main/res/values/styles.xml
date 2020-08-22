@@ -6,7 +6,7 @@
         <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground"> @color/windowBackground</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
     </style>
 
     <style name="DatePickerStyle" parent="android:Widget.Material.DatePicker">
@@ -15,5 +15,14 @@
         <item name="colorPrimaryDark">@color/date_pick_colour</item>
         <item name="colorAccent">@color/date_pick_colour</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

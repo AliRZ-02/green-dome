@@ -55,13 +55,13 @@
         android:layout_marginTop="16dp"
         android:layout_weight="1"
         android:background="@drawable/transparent"
+        android:onClick="pauseAdhan"
         android:scaleX="1"
         android:scaleY="1"
         app:layout_constraintBottom_toTopOf="@+id/back_image_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/maghrib_time_text"
-        app:srcCompat="@drawable/pause_asset"
-        android:onClick="pauseAdhan"/>
+        app:srcCompat="@drawable/pause_asset" />
 
     <Button
         android:id="@+id/manual_button"

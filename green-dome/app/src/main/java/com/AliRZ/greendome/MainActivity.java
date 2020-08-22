@@ -3,6 +3,7 @@ package com.AliRZ.greendome;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         ImageButton tasbeehCounterImageButton = findViewById(R.id.counter_button);
         ImageButton comingSoonImageButton = findViewById(R.id.comingSoonButton);
         ImageButton qiblaFinderImageButton = findViewById(R.id.qibla_button);
+        ImageButton remindersButton = findViewById(R.id.reminderButton);
+        ImageButton linksButton = findViewById(R.id.links_button);
 
         salahClockImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         comingSoonImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openComingSoonPage();
+                openAboutSection();
             }
         });
 
@@ -48,6 +51,30 @@ public class MainActivity extends AppCompatActivity {
                 openQiblaFinder();
             }
         });
+
+        remindersButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReminders();
+            }
+        });
+
+        linksButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openResourcesActivity();
+            }
+        });
+    }
+
+    private void openResourcesActivity() {
+        Intent intent = new Intent(this, linksPage.class);
+        startActivity(intent);
+    }
+
+    private void openReminders() {
+        Intent intent = new Intent(this, SalahClockActivity.class);
+        startActivity(intent);
     }
 
     private void openTasbeehCounter() {
@@ -60,9 +87,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openComingSoonPage (){
-        Toast toast = Toast.makeText(this, "Coming Soon!", Toast.LENGTH_SHORT);
-        toast.show();
+    public void openAboutSection(){
+        String url = "https://www.nhl.com";
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
     }
 
     public void openQiblaFinder(){

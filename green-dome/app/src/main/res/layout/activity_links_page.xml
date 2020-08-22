@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/salahbackground"
+    tools:context=".linksPage">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Resources"
+        android:textColor="#2d3436"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/QuranImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/QuranImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/transparent"
+        android:src="@drawable/book_asset"
+        app:layout_constraintBottom_toTopOf="@id/DuasImageButton"
+        app:layout_constraintEnd_toStartOf="@id/QuranCaption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/QuranCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Quran"
+        android:textAlignment="center"
+        android:textColor="#2d3436"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/QuranImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/QuranImageButton"
+        app:layout_constraintTop_toTopOf="@id/QuranImageButton" />
+
+    <ImageButton
+        android:id="@+id/DuasImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/transparent"
+        android:src="@drawable/book2_asset"
+        app:layout_constraintBottom_toTopOf="@id/MoreImageButton"
+        app:layout_constraintEnd_toStartOf="@id/DuasCaption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/QuranImageButton" />
+
+    <TextView
+        android:id="@+id/DuasCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Duas"
+        android:textAlignment="center"
+        android:textColor="#2d3436"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/DuasImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/DuasImageButton"
+        app:layout_constraintTop_toTopOf="@id/DuasImageButton" />
+
+    <ImageButton
+        android:id="@+id/MoreImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/transparent"
+        android:src="@drawable/more_asset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/MoreCaption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DuasImageButton" />
+
+    <TextView
+        android:id="@+id/MoreCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="More"
+        android:textAlignment="center"
+        android:textColor="#2d3436"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/MoreImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/MoreImageButton"
+        app:layout_constraintTop_toTopOf="@id/MoreImageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
