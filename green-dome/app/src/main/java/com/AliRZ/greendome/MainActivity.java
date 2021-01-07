@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openAboutSection(){
-        String url = "https://www.nhl.com";
+        String url = "https://github.com/AliRZ-02/green-dome";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);

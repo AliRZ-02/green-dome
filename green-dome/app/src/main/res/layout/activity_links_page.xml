@@ -90,7 +90,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/transparent"
         android:src="@drawable/more_asset"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/back_button"
         app:layout_constraintEnd_toStartOf="@id/MoreCaption"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/DuasImageButton" />
@@ -111,5 +111,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/MoreImageButton"
         app:layout_constraintTop_toTopOf="@id/MoreImageButton" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/salah_clock_textview"
+        android:fontFamily="@font/roboto"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MoreImageButton"
+        android:onClick="goBack"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
